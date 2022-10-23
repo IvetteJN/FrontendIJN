@@ -37,7 +37,7 @@ export class SkillsComponent implements OnInit {
         data => {
           this.cargarSkills();
         }, err => {
-          alert("No se pudo borrar la skill");
+          alert("Couldnt delete");
         }
       )
     }

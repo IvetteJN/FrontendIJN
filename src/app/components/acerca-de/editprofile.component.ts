@@ -19,7 +19,7 @@ export class EditprofileComponent implements OnInit {
       data =>{
         this.persona = data;
       }, err =>{
-         alert("Error al modificar");
+         alert("Failed");
          this.router.navigate(['']);
       }
     )
@@ -31,13 +31,13 @@ export class EditprofileComponent implements OnInit {
       data => {
         this.router.navigate(['']);
       }, err => {
-        alert("Error al modificar el perfil");
+        alert("Couldnt update");
         this.router.navigate(['']);
       }
     )
   }
 
   uploadImage($event:any){
-
+    
   }
 }

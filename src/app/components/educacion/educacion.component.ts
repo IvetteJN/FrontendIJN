@@ -25,7 +25,7 @@ export class EducacionComponent implements OnInit {
 
   cargarEducacion(): void{
     this.educacionS.lista().subscribe(
-      data =>{
+      data => {
         this.educacion = data;
       }
     )
@@ -37,7 +37,7 @@ export class EducacionComponent implements OnInit {
         data => {
           this.cargarEducacion();
         }, err => {
-          alert("No se pudo eliminar");
+          alert("Couldnt delete");
         }
       )
     }

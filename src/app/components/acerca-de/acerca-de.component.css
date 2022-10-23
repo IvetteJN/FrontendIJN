@@ -6,9 +6,11 @@ div{
     text-align: center;
     color: white;
 }
+
+
 /*Estilo de la foto de perfil*/
 @media (min-width: 576px){
-    #fotodeperfil{
+    #profilepicture{
         position: absolute;
         width: 15%;
         border-radius: 100%;
@@ -17,7 +19,7 @@ div{
     }
 }
 @media (max-width: 575px){
-    #fotodeperfil{
+    #profilepicture{
         position: absolute;
         width: 30%;
         border-radius: 100%;

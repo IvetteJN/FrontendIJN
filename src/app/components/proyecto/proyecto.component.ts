@@ -38,7 +38,7 @@ export class ProyectoComponent implements OnInit {
         data => {
           this.cargarProyectos();
         }, err => {
-          alert("No se pudo eliminar");
+          alert("Couldnt delete");
         }
       )
     }

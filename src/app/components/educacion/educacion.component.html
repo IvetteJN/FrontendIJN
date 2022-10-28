@@ -8,7 +8,7 @@
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
                     <td><h4>{{Educacion.nombreE}}</h4></td>
-                    <td><img src="{{ Educacion.imgE }}" class="img-fluid img" alt=""/></td>
+                    <td><img src="{{Educacion.imgE}}" class="img-fluid img" alt=""/></td>
                     <td><h5>Start date</h5> <h6>{{ Educacion.fechaInicio }}</h6></td>
                     <td><h5>End date</h5> <h6>{{ Educacion.fechaFin }}</h6></td>
                     <td>{{Educacion.descripcionE}}</td>

@@ -12,9 +12,9 @@ div{
 @media (min-width: 576px){
     #profilepicture{
         position: absolute;
-        width: 15%;
+        width: 20%;
         border-radius: 100%;
-        left: 3%;
+        left: 1%;
         top:300px;
     }
 }
@@ -23,8 +23,13 @@ div{
         position: absolute;
         width: 30%;
         border-radius: 100%;
-        left: 33%;
-        top:950px;
+        left: 3%;
+        top:400px;
+    }
+
+    #btn{
+        position: absolute;
+        right: 3%;    
     }
 }
 

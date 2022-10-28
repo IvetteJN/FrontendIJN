@@ -2,3 +2,10 @@ img{
     width: 100%;
     height: 400px;
 }
+
+@media (max-width: 575px){
+    img{
+        width: 100%;
+        height: 200px;
+    }
+}

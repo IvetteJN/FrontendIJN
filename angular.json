@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frontendijn": {
+    "ivettejaelnobilta-3e8d7": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/frontendijn",
+            "outputPath": "dist/ivettejaelnobilta-3e8d7",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "frontendijn:build:production"
+              "browserTarget": "ivettejaelnobilta-3e8d7:build:production"
             },
             "development": {
-              "browserTarget": "frontendijn:build:development"
+              "browserTarget": "ivettejaelnobilta-3e8d7:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "frontendijn:build"
+            "browserTarget": "ivettejaelnobilta-3e8d7:build"
           }
         },
         "test": {
@@ -109,5 +109,5 @@
       }
     }
   },
-  "defaultProject": "frontendijn"
+  "defaultProject": "ivettejaelnobilta-3e8d7"
 }

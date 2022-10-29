@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/frontendijn",
+    "public": "dist/ivettejaelnobilta-3e8d7",
     "ignore": [
       "firebase.json",
       "**/.*",

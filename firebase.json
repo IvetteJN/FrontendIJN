@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/ivettejaelnobilta-3e8d7",
+    "public": "dist/portfolio-ivette-jael-nobilta",
     "ignore": [
       "firebase.json",
       "**/.*",

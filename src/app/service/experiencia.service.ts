@@ -1,34 +1,37 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 import { Experiencia } from '../model/experiencia';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SExperienciaService {
+
+  experienceURL = 'https://backend-ijn.onrender.com/explab/';
+
   URL = environment.URL + 'explab/';
 
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{
-    return this.httpClient.get<Experiencia[]>(this.URL + 'lista');
+    return this.httpClient.get<Experiencia[]>(this.experienceURL + 'lista');
   }
 
   public detail(id: number): Observable<Experiencia>{
-    return this.httpClient.get<Experiencia>(this.URL + `detail/${id}`);
+    return this.httpClient.get<Experiencia>(this.experienceURL + `detail/${id}`);
   } 
 
   public save(experiencia: Experiencia): Observable<any>{
-    return this.httpClient.post<any>(this.URL + 'create', experiencia);
+    return this.httpClient.post<any>(this.experienceURL + 'create', experiencia);
   }
 
   public update(id: number, experiencia: Experiencia): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `update/${id}`, experiencia);
+    return this.httpClient.put<any>(this.experienceURL + `update/${id}`, experiencia);
   }
 
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>(this.URL + `delete/${id}`);
+    return this.httpClient.delete<any>(this.experienceURL + `delete/${id}`);
   }
 }

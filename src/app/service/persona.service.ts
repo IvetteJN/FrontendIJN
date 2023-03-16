@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 import { persona } from '../model/persona.model';
 
 @Injectable({
@@ -9,20 +9,23 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
+
+  personURL = 'https://backend-ijn.onrender.com/persona/';
+
   URL = environment.URL + 'persona/';
 
   constructor(private httpClient : HttpClient) { }
 
   public lista(): Observable<persona[]>{
-    return this.httpClient.get<persona[]>(this.URL + 'lista');
+    return this.httpClient.get<persona[]>(this.personURL + 'lista');
   }
 
   public detail(id: number): Observable<persona>{
-    return this.httpClient.get<persona>(this.URL + `detail/${id}`);
+    return this.httpClient.get<persona>(this.personURL + `detail/${id}`);
   }
 
   public update(id: number, Persona: persona): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
+    return this.httpClient.put<any>(this.personURL + `update/${id}`, Persona);
   }
 
 }
